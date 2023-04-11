@@ -1,0 +1,144 @@
+[
+    {
+      "id": 1,
+      "companyLogo": "/google-1-1 1.png",
+      "jobTitle": "Technical Database Engineer",
+      "companyName": "Google LLC",
+      "remoteOrOnsite": "Remote",
+      "location": "San Francisco, CA",
+      "fullOrPartTime": "Full-time",
+      "salary": "$120,000 - $150,000",
+      "jobDescription": "We are seeking a highly motivated software engineer to join our team!",
+      "jobResponsibilities": [
+        "Develop and maintain high-quality software applications",
+        "Collaborate with cross-functional teams to design, develop, and deliver products",
+        "Participate in code reviews and contribute to the improvement of development processes"
+      ],
+      "educationalRequirements": "Bachelor's degree in Computer Science or related field",
+      "experiences": "3+ years of experience in software development",
+      "contactInformation": {
+        "name": "John Doe",
+        "email": "john@company1.com",
+        "phone": "(555) 555-5555"
+      }
+    },
+    {
+      "id": 2,
+      "companyLogo": "/netflix-4 1.png",
+      "jobTitle": "Senior Product Designer",
+      "companyName": "Netflix",
+      "remoteOrOnsite": "Onsite",
+      "location": "New York, NY",
+      "fullOrPartTime": "Full-time",
+      "salary": "$130,000 - $160,000",
+      "jobDescription": "We are looking for a talented data scientist to join our growing team!",
+      "jobResponsibilities": [
+        "Develop and implement machine learning models and algorithms",
+        "Analyze large datasets to extract insights and identify trends",
+        "Communicate findings to stakeholders and recommend actions based on data-driven insights"
+      ],
+      "educationalRequirements": "Master's or Ph.D. degree in Computer Science, Statistics, or related field",
+      "experiences": "5+ years of experience in data science",
+      "contactInformation": {
+        "name": "Jane Smith",
+        "email": "jane@company2.com",
+        "phone": "(555) 555-5555"
+      }
+    },
+    {
+      "id": 3,
+      "companyLogo": "/tesla-9 1.png",
+      "jobTitle": "Software Engineer",
+      "companyName": "Tesla",
+      "remoteOrOnsite": "Remote",
+      "location": "Seattle, WA",
+      "fullOrPartTime": "Full-time",
+      "salary": "$150,000 - $180,000",
+      "jobDescription": "We are seeking a talented product manager to lead the development of our flagship product!",
+      "jobResponsibilities": [
+        "Define and execute product vision and strategy",
+        "Collaborate with cross-functional teams to identify customer needs and requirements",
+        "Develop and manage product roadmap and backlog"
+      ],
+      "educationalRequirements": "Bachelor's degree in Computer Science, Business, or related field",
+      "experiences": "5+ years of experience in product management",
+      "contactInformation": {
+        "name": "Alice Brown",
+        "email": "alice@company3.com",
+        "phone": "(555) 555-5555"
+      }
+    },
+
+    {
+        "id": 4,
+        "companyLogo": "/Group 10021.png",
+        "jobTitle": "Production Manager",
+        "companyName": "AirBnB",
+        "remoteOrOnsite": "Onsite",
+        "location": "Florida, USA",
+        "fullOrPartTime": "Full-time",
+        "salary": "$150,000 - $180,000",
+        "jobDescription": "We are seeking a talented product manager to lead the development of our flagship product!",
+        "jobResponsibilities": [
+          "Define and execute product vision and strategy",
+          "Collaborate with cross-functional teams to identify customer needs and requirements",
+          "Develop and manage product roadmap and backlog"
+        ],
+        "educationalRequirements": "Bachelor's degree in Computer Science, Business, or related field",
+        "experiences": "5+ years of experience in product management",
+        "contactInformation": {
+          "name": "Alice Brown",
+          "email": "alice@company3.com",
+          "phone": "(555) 555-5555"
+        }
+      },
+
+    {
+      "id": 5,
+      "companyLogo": "/google-1-1 1.png",
+      "jobTitle": "UX Designer",
+      "companyName": "Google LLC",
+      "remoteOrOnsite": "Remote",
+      "location": "Boston, USA",
+      "fullOrPartTime": "Full-time",
+      "salary": "$150,000 - $180,000",
+      "jobDescription": "We are seeking a talented product manager to lead the development of our flagship product!",
+      "jobResponsibilities": [
+        "Define and execute product vision and strategy",
+        "Collaborate with cross-functional teams to identify customer needs and requirements",
+        "Develop and manage product roadmap and backlog"
+      ],
+      "educationalRequirements": "Bachelor's degree in Computer Science, Business, or related field",
+      "experiences": "5+ years of experience in product management",
+      "contactInformation": {
+        "name": "Alice Brown",
+        "email": "alice@company3.com",
+        "phone": "(555) 555-5555"
+      }
+    },
+    
+    {
+      "id": 6,
+      "companyLogo": "/CareerHub.png",
+      "jobTitle": "Web Developer",
+      "companyName": "Career Hub",
+      "remoteOrOnsite": "Onsite",
+      "location": "Dhaka, Bangladesh",
+      "fullOrPartTime": "Full-time",
+      "salary": "$150,000 - $180,000",
+      "jobDescription": "We are seeking a talented product manager to lead the development of our flagship product!",
+      "jobResponsibilities": [
+        "Define and execute product vision and strategy",
+        "Collaborate with cross-functional teams to identify customer needs and requirements",
+        "Develop and manage product roadmap and backlog"
+      ],
+      "educationalRequirements": "Bachelor's degree in Computer Science, Business, or related field",
+      "experiences": "5+ years of experience in product management",
+      "contactInformation": {
+        "name": "Alice Brown",
+        "email": "alice@company3.com",
+        "phone": "(555) 555-5555"
+      }
+    }
+]
+  

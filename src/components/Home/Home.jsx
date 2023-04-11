@@ -1,9 +1,12 @@
 import React from 'react';
 import JobCategory from '../JobCategory/JobCategory';
 import { useLoaderData } from 'react-router-dom';
+import FeaturedJobs from '../FeaturedJobs/FeaturedJobs';
 
 const Home = () => {
     const jobCategories = useLoaderData();
+    const jobsData = useLoaderData();
+    console.log(jobsData);
 
     return (
         <div className='mx-auto w-[90%] my-12'>
@@ -12,11 +15,11 @@ const Home = () => {
 
             <section className='flex md:flex items-center'>
                 <div className='w-[50%]'>
-                    <h1 className='text-6xl font-bold my-8'>One Step 
-                    <br />
-                    Closer To Your 
-                    <br />
-                    <span className='highlighted-text'>Dream Job</span></h1>
+                    <h1 className='text-6xl font-bold my-8'>One Step
+                        <br />
+                        Closer To Your
+                        <br />
+                        <span className='highlighted-text'>Dream Job</span></h1>
                     <p className='my-8'>Explore thousands of job opportunities with all the information you need. Its your future. Come find it. Manage all your job application from start to finish.</p>
                     <button className='button-color font-semibold text-white p-3 rounded-lg'>Get Started</button>
                 </div>
@@ -24,14 +27,37 @@ const Home = () => {
             </section>
 
             {/* Job Category here */}
-            
-            <section className='flex md:flex justify-between items-center my-12'>
-                {
-                    jobCategories.map(category => <JobCategory
-                        key={category.id}
-                        category={category}                        
-                    ></JobCategory>)
-                }
+
+            <section>
+                <div className='my-12 text-center'>
+                    <h2 className='text-4xl font-bold mb-3'>Job Category List</h2>
+                    <p className='text-slate-600'>Explore thousands of job opportunities with all the information you need. Its your future.</p>
+                </div>
+                <div className='flex justify-between items-center my-12'>
+                    {
+                        jobCategories.map(category => <JobCategory
+                            key={category._id}
+                            category={category}
+                        ></JobCategory>)
+                    }
+                </div>
+            </section>
+
+            {/* Featured Job Section Here */}
+
+            <section className='mx-auto'>
+                <div className='my-12 text-center'>
+                    <h2 className='text-4xl font-bold mb-3'>Featured Jobs</h2>
+                    <p className='text-slate-600'>Explore thousands of job opportunities with all the information you need. Its your future.</p>
+                </div>
+                <div className='grid grid-cols-2'>
+                    {
+                        jobsData.map(job => <FeaturedJobs
+                            key={job.id}
+                            job={job}
+                        ></FeaturedJobs>)
+                    }
+                </div>
             </section>
         </div>
     );
