@@ -1,12 +1,20 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import JobCategory from '../JobCategory/JobCategory';
 import { useLoaderData } from 'react-router-dom';
 import FeaturedJobs from '../FeaturedJobs/FeaturedJobs';
 
 const Home = () => {
     const jobCategories = useLoaderData();
-    const jobsData = useLoaderData();
-    console.log(jobsData);
+
+    // fetching jobsData.json file from public folder
+    const [jobs, setJobs] = useState([]);
+
+    useEffect(() => {
+        fetch('jobsData.json')
+            .then(res => res.json())
+            // .then(data => console.log(data))
+            .then(data => setJobs(data))
+    }, [])
 
     return (
         <div className='mx-auto w-[90%] my-12'>
@@ -52,7 +60,7 @@ const Home = () => {
                 </div>
                 <div className='grid grid-cols-2'>
                     {
-                        jobsData.map(job => <FeaturedJobs
+                        jobs.map( job => <FeaturedJobs
                             key={job.id}
                             job={job}
                         ></FeaturedJobs>)

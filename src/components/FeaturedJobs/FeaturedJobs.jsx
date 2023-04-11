@@ -1,22 +1,23 @@
 import React from 'react';
 
 const FeaturedJobs = ({job}) => {
-    const {companyLogo, jobTitle, companyName, remoteOrOnsite, fullOrPartTime, location, salary} = job;
+    const {id, companyLogo, jobTitle, companyName, remoteOrOnsite, fullOrPartTime, location, salary} = job;
+    
 
     return (
         <div className='mx-auto border border-slate-300 p-8 w-[70%] gap-7 mb-7'>
-            <img src={companyLogo} alt="" />
-            <h3>{jobTitle}</h3>
-            <p>{companyName}</p>
-            <div className='flex'>
-                <button>{remoteOrOnsite}</button>
-                <button>{fullOrPartTime}</button>
+            <img className='mb-3' src={companyLogo} alt="" />
+            <h3 className='font-bold text-xl mb-2'>{jobTitle}</h3>
+            <p className='mb-2'>{companyName}</p>
+            <div className='flex gap-6 mb-2'>
+                <button className='outline-purple-300 outline font-semibold p-2 px-3 rounded-lg'>{remoteOrOnsite}</button>
+                <button className='outline-purple-300 outline font-semibold p-2 px-3 rounded-lg'>{fullOrPartTime}</button>
             </div>
-            <div>
-                <p>{location}</p>
-                <p>{salary}</p>
+            <div className='flex justify-between my-3'>
+                <p className='flex gap-2 mb-1'><span><img src="/Location Icon.png" alt="" /></span> {location}</p>
+                <p className='flex gap-2 mb-1'><span><img src="/Frame.png" alt="" /></span> {salary}</p>
             </div> 
-            <button>View Details</button>
+            <button className='button-color font-semibold text-white p-3 rounded-lg'>View Details</button>
         </div>
     );
 };
