@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Header.css'
 
 const Header = () => {
     return (
@@ -12,7 +11,7 @@ const Header = () => {
                 <Link to='/applied'>Applied Jobs</Link>
                 <Link to='/blog'>Blog</Link>
             </div>
-            <button className='button-color font-semibold bg-purple-400 text-white p-3 rounded-lg'>Start Applying</button>
+            <button className='button-color font-semibold text-white p-3 rounded-lg'>Start Applying</button>
         </nav>
     );
 };
