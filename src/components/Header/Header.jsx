@@ -6,7 +6,7 @@ const Header = () => {
     return (
         <nav className=' mx-auto w-[90%] flex justify-between items-center mt-5'>
             <h1 className='text-4xl font-bold'>Job Hunt</h1>
-            <div className='flex gap-6 font-semibold'>
+            <div className='flex gap-12 font-semibold'>
                 <Link to='/'>Home</Link>
                 <Link to='/statistics'>Statistics</Link>
                 <Link to='/applied'>Applied Jobs</Link>
