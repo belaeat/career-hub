@@ -1,7 +1,7 @@
 [
     {
       "id": 1,
-      "logo": "./accounts 1.png",
+      "logo": "/accounts 1.png",
       "name": "Account & Finance",
       "jobsAvailable": 300
     },
@@ -13,13 +13,13 @@
     },
     {
       "id": 3,
-      "logo": "./social-media 1.png",
+      "logo": "/social-media 1.png",
       "name": "Marketing & Sales",
       "jobsAvailable": 150
     },
     {
       "id": 4,
-      "logo": "./chip 1.png",
+      "logo": "/chip 1.png",
       "name": "Engineering Job",
       "jobsAvailable": 224
     }
