@@ -1,0 +1,5 @@
+.header {
+    background-image: url(/Vector.png), url(/Vector-1.png);
+    background-position: top right, bottom left;
+    background-repeat: no-repeat;
+}
