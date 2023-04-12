@@ -1,8 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import { useLoaderData, useParams } from 'react-router-dom';
 import './ViewDetails.css'
+import { addToDb } from '../../utilities/fakebd';
 
 const ViewDetails = () => {
+
+    const handleApplyJob = (id) =>{
+        addToDb(id)
+    }
+
     const { id } = useParams();
     const jobDetails = useLoaderData();
     const [job, setJob] = useState({});
@@ -19,7 +25,7 @@ const ViewDetails = () => {
     return (
         <div>
             <div className='header text-center my-12'>
-                <h2 className='font-bold text-3xl'>Job Details</h2>
+                <h2 className='font-bold text-3xl'>Job Details</h2>                
             </div>
             <div className='flex items-center justify-between w-[90%] mx-auto my-12'>
                 <div className='w-[60%]'>
@@ -59,7 +65,7 @@ const ViewDetails = () => {
                             <p><span className='font-semibold'>Address: </span>{job.location}</p>
                         </div>
                     </div>
-                    <button className='button-color font-semibold text-white p-3 px-12 rounded-lg w-full'>Apply Now</button>
+                    <button onClick={()=>handleApplyJob(id)} className='button-color font-semibold text-white p-3 px-12 rounded-lg w-full'>Apply Now</button>
                 </div>
             </div>
         </div>

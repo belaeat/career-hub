@@ -12,6 +12,7 @@ import AppliedJobs from './components/AppliedJobs/AppliedJobs';
 import Blog from './components/Blog/Blog';
 import ErrorPage from './components/ErrorPage/ErrorPage';
 import ViewDetails from './components/ViewDetails/ViewDetails';
+import storedJobsFromDb from './loaders/storedJobsFromDb';
 
 const router = createBrowserRouter([
   {
@@ -37,7 +38,8 @@ const router = createBrowserRouter([
       },
       {
         path: 'applied',
-        element: <AppliedJobs></AppliedJobs>
+        element: <AppliedJobs></AppliedJobs>,
+        loader: storedJobsFromDb 
       },
       {
         path: 'blog',

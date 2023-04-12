@@ -8,6 +8,7 @@ const Home = () => {
 
     // fetching jobsData.json file from public folder
     const [jobs, setJobs] = useState([]);
+    const [showAll, setShowAll] = useState(false);
 
     useEffect(() => {
         fetch('/jobsData.json')
@@ -15,6 +16,12 @@ const Home = () => {
             // .then(data => console.log(data))
             .then(data => setJobs(data))
     }, [])
+
+    const slicedJobs = showAll ? jobs : jobs.slice(0, 4);
+
+    const handleButtonClick = () => {
+        setShowAll((prevShowAll) => !prevShowAll);
+      };
 
     return (
         <div className='mx-auto w-[90%] my-12'>
@@ -60,16 +67,17 @@ const Home = () => {
                 </div>
                 <div className='grid md:grid-cols-2'>
                     {
-                        jobs.map(job => <FeaturedJobs
+                        slicedJobs.map(job => <FeaturedJobs
                             key={job.id}
                             job={job}
                         ></FeaturedJobs>)
                     }
                 </div>
+
+                <div className='mx-auto text-center my-12'>
+                    <button onClick={handleButtonClick} className='button-color font-semibold text-white p-3 rounded-lg'>{showAll ? "Show Less" : "Show All Jobs"}</button>
+                </div>
             </section>
-            <div className='mx-auto text-center my-12'>
-                <button className='button-color font-semibold text-white p-3 rounded-lg'>See All Jobs</button>
-            </div>
         </div>
     );
 };
