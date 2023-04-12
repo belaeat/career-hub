@@ -15,18 +15,23 @@ const Statistics = () => {
         { id: 'A8', marks: 48 },
     ]
     return (
-        <div className='text-center mx-auto'>
-            <AreaChart
-                width={500}
-                height={300}
-                data={marksArray}
-            >
+        <div className='text-center mx-auto my-12'>
+            <div>
+                <h2 className='font-bold text-3xl my-12'>Assignment Marks</h2>
+            </div>
+            <div className='flex justify-center'>
+                <AreaChart
+                    width={1000}
+                    height={300}
+                    data={marksArray}
+                >
 
-                <XAxis dataKey="id" />
-                <YAxis />
-                <Tooltip />
-                <Area type="monotone" dataKey="marks" stroke="#8884d8" fill="#8884d8" />
-            </AreaChart>
+                    <XAxis dataKey="id" />
+                    <YAxis />
+                    <Tooltip />
+                    <Area type="monotone" dataKey="marks" stroke="#8884d8" fill="#8884d8" />
+                </AreaChart>
+            </div>
         </div>
     );
 };

@@ -21,6 +21,9 @@ const FeaturedJobs = ({ job }) => {
                 </div>
                 <button><Link className='button-color font-semibold text-white p-3 rounded-lg' to={`/job/${id}`}>View Details</Link></button>
             </div>
+            <div>
+                
+            </div>
         </div>
     );
 };
