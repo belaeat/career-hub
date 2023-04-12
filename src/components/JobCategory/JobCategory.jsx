@@ -5,7 +5,7 @@ const JobCategory = ({ category }) => {
 
     return (
         <div >
-            <div className='rounded-lg bg-purple-50 p-12'>
+            <div className='rounded-lg bg-purple-50 p-12 mb-5'>
                 <img className='mb-5' src={logo} alt="" />
                 <h3 className='mb-3 font-bold text-xl'>{name}</h3>
                 <p><small className='text-slate-400'>{jobsAvailable} Jobs Available</small></p>

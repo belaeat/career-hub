@@ -1,11 +1,12 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
-const FeaturedJobs = ({job}) => {
-    const {id, companyLogo, jobTitle, companyName, remoteOrOnsite, fullOrPartTime, location, salary} = job;
-    
+const FeaturedJobs = ({ job }) => {
+    const { id, companyLogo, jobTitle, companyName, remoteOrOnsite, fullOrPartTime, location, salary } = job;
 
+    const navigate = useNavigate()
     return (
-        <div className='mx-auto border border-slate-300 p-8 w-[70%] gap-7 mb-7'>
+        <div className='mx-auto border border-slate-300 p-8 md:w-[70%] gap-7 mb-7'>
             <img className='mb-3' src={companyLogo} alt="" />
             <h3 className='font-bold text-xl mb-2'>{jobTitle}</h3>
             <p className='mb-2'>{companyName}</p>
@@ -16,8 +17,9 @@ const FeaturedJobs = ({job}) => {
             <div className='flex justify-between my-3'>
                 <p className='flex gap-2 mb-1'><span><img src="/Location Icon.png" alt="" /></span> {location}</p>
                 <p className='flex gap-2 mb-1'><span><img src="/Frame.png" alt="" /></span> {salary}</p>
-            </div> 
-            <button className='button-color font-semibold text-white p-3 rounded-lg'>View Details</button>
+            </div>
+            <button onClick={() => navigate(`job/${id}`)} className='button-color font-semibold text-white p-3 rounded-lg'>View Details</button>
+            {/* <p><Link  to={`/job/${id}`}>View Details</Link></p> */}
         </div>
     );
 };
